@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#parent {
+    height: 60%;
+    width: 100%;
+    background-color: grey;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+    flex-wrap: nowrap;
+}
+#parent::-webkit-scrollbar{
+    display: none
+}
+
+.child {
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+.child img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.child img:hover{
+    cursor: pointer;
+}
